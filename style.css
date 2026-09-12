@@ -1,0 +1,348 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #222;
+    background: #fefefe;
+    scroll-behavior: smooth;
+    padding-top: 70px; /* Pour navbar fixe */
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 18px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #00aaff;
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(135deg, #00aaff, #004f99);
+    color: white;
+}
+
+.hero .container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* ================= BOUTONS ================= */
+.hero-buttons .btn {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background: #00aaff;
+    color: white;
+}
+
+.btn.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn.cv {
+    background: white;
+    color: #004f99;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+/* ================= SECTIONS ================= */
+.section {
+    padding: 90px 20px;
+}
+
+.section .container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    color: #00aaff;
+    margin-bottom: 25px;
+}
+
+.section p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ================= COMPÉTENCES ================= */
+.skills-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.skill-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: 2px solid #00aaff;
+    background: white;
+    color: #004f99;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skill-btn:hover, .skill-btn.active-skill {
+    background: #00aaff;
+    color: white;
+}
+
+.skills-details {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+.skill-detail {
+    display: none;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.skill-detail h3 {
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.skill-detail h4 {
+    margin-top: 10px;
+    color: #004f99;
+}
+
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.close-btn:hover {
+    background: #ff1a1a;
+}
+
+/* ================= PROJETS ================= */
+.projects-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.project-btn {
+    padding: 12px 28px;
+    border-radius: 25px;
+    border: 2px solid #00aaff;
+    background: white;
+    color: #004f99;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-btn:hover, .project-btn.active-project {
+    background: #00aaff;
+    color: white;
+}
+
+.projects-details {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+    position: relative;
+}
+
+.project-detail {
+    display: none;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.project-detail h3 {
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.project-detail a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: #00aaff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-detail a:hover {
+    opacity: 0.85;
+}
+
+.project-figures {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-figures figure {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.project-figures img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-figures figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* ================= CONTACT ================= */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    opacity: 0.9;
+}
+.mail-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00aaff, #004f99);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.mail-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
+
+/* ================= ANIMATION AU SCROLL ================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: ease 0.8s;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
