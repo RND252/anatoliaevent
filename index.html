@@ -1,1 +1,337 @@
-fd
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eren DOGAN - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#hero">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero reveal">
+    <div class="container">
+      <h1>Eren DOGAN</h1>
+      <p class="description">Bienvenue sur mon portfolio. Découvrez mes compétences, mes projets et comment me contacter.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary">Me Contacter</a>
+        <a href="images/Eren_DOGAN_CV.pdf" target="_blank" class="btn cv">Télécharger CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="about" class="section reveal">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>Bonjour, je suis Eren Dogan, étudiant en 3ème année de BUT Réseaux et Télécoms.
+        Je suis diplômé d'un baccalauréat général spécialité NSI et SVT et d'un DUT Réseaux et Télécoms. Je suis passionné par les réseaux et la sécurité informatique.</p>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills" class="section reveal">
+    <div class="container">
+      <h2>Mes Compétences</h2>
+
+      <div class="skills-buttons">
+        <button class="skill-btn" data-skill="reseaux">
+          <i class="fa-solid fa-network-wired"></i>
+          Réseaux</button>
+        <button class="skill-btn" data-skill="developpement">
+          <i class="fa-solid fa-code"></i>
+          Développement</button>
+        <button class="skill-btn" data-skill="telephonie">
+          <i class="fa-solid fa-phone"></i>
+          Téléphonie IP</button>
+        <button class="skill-btn" data-skill="securite">
+          <i class="fa-solid fa-shield-halved"></i>
+          Sécurité informatique</button>
+        <button class="skill-btn" data-skill="vocabulaire">
+          Vocabulaire</button>
+      </div>
+
+      <div class="skills-details">
+
+        <!-- Réseaux -->
+        <div id="reseaux" class="skill-detail">
+          <button class="close-btn">X</button>
+          <h3>Réseaux</h3>
+          <h4>Routeurs</h4>
+          <ul><li>OSPF, BGP, IPv4/IPv6, MPLS, HSRP</li></ul>
+          <h4>Switches</h4>
+          <ul><li>VLAN, HSRP, Routage Inter-VLAN, VTP</li></ul>
+          <h4>Virtualisation</h4>
+          <ul><li>Proxmox, VMware ESXi, Hyper-V, VirtualBox</li></ul>
+          <h4>Supervision</h4>
+          <ul><li>Nagios</li></ul>
+        </div>
+
+        <!-- Développement -->
+        <div id="developpement" class="skill-detail">
+          <button class="close-btn">X</button>
+          <h3>Développement</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript : sites statiques et dynamiques</li>
+            <li>Java : mini applications (chat)</li>
+            <li>C++ : robot Arduino, scripts Rubber Ducky</li>
+            <li>Windev : logiciel de gestion de stock</li>
+            <li>WordPress : sites vitrines</li>
+            <li>PowerShell/Shell : scripts pour administration</li>
+          </ul>
+        </div>
+
+        <!-- Téléphonie IP -->
+        <div id="telephonie" class="skill-detail">
+          <button class="close-btn">X</button>
+          <h3>Téléphonie IP</h3>
+          <ul>
+            <li>Serveurs PBX : Asterisk, 3CX</li>
+            <li>Clients VoIP : Linphone</li>
+            <li>Réseaux cellulaires : 1G, GSM, UMTS, 4G LTE, 5G, fibre/cuivre</li>
+          </ul>
+        </div>
+
+        <!-- Sécurité informatique -->
+        <div id="securite" class="skill-detail">
+          <button class="close-btn">X</button>
+          <h3>Sécurité informatique</h3>
+          <ul>
+            <li>Red Team : CTF, HackTheBox, TryHackMe, hackathons SecuRT</li>
+            <li>Blue Team : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
+            <li>IDS/IPS : Suricata, Snort, Zeek</li>
+            <li>SIEM : Graylog</li>
+            <li>Firewalls : pfSense, iptables, Stormshield</li>
+          </ul>
+        </div>
+
+        <div id="vocabulaire" class="skill-detail">
+          <button class="clos-btn">X</button>
+          <h3>Vocabulaire</h3>
+          <ul>
+            <il>CE:
+Composantes essentielles : critères/qualités qui qualifient la compétence (ce qui est attendu pour bien la réaliser).</il>
+            <p><il>AC:
+Apprentissages critiques : apprentissages à valider progressivement (par niveaux/semestres) pour développer la compétence.</il></p>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Projets</h2>
+
+      <div class="projects-buttons">
+        <button class="project-btn" data-project="proj1">Projet 1</button>
+        <button class="project-btn" data-project="proj2">Projet 2</button>
+        <button class="project-btn" data-project="proj3">Projet 3</button>
+        <button class="project-btn" data-project="proj4">Projet 4</button>
+        <button class="project-btn" data-project="proj5">Projet 5</button>
+      </div>
+
+      <div class="projects-details">
+
+        <div id="proj1" class="project-detail">
+  <button class="close-btn">X</button>
+  <h3>Projet 1 : Mener un projet professionnel</h3>
+  <p>
+    J’ai mené un projet professionnel qui consiste à piloter un projet informatique, c’est-à-dire de faire toute l’infrastructure réseau d’un hôpital de campagne, ce qui m’a permis de mettre en évidence mes compétences en cybersécurité. 
+    Pour cela, j’avais 3 jours et j’étais en groupe avec Ilyas, Gabin et Jasim. Avant de commencer ces trois jours de projet, nous avions préparé quelques semaines avant :
+  </p><br></br>
+  <ul>
+    <li>Une cartographie de l’infrastructure réseau de l’hôpital pour savoir le hardware nécessaire (processeur, carte mère, etc.) et le software (systèmes d’exploitation Windows/Linux, applications, etc.)</li><br></br>
+    <li>Un cahier des charges pour définir qui fait quoi durant le projet et éviter les pertes de temps</li><br></br>
+  </ul>
+  <p>
+    J’ai configuré des PCs, routeurs et switchs pour que les machines fonctionnent correctement, en utilisant les compétences vues en cours : administrer les réseaux et l’internet, connecter les entreprises et les usagers, créer des outils et applications informatiques pour les R&T. Cela inclut la configuration du DHCP, VLAN, etc.
+  </p><br></br>
+
+  <p>
+    Durant le projet, j’ai rencontré des problèmes de configuration qui ont causé des retards. Par exemple, un PC virtuel sur Proxmox et un PC physique ne communiquaient pas entre eux. (Voir figure 2)
+    Pour résoudre cela, j’ai vérifié tous les branchements des PCs au switch et routeur, ainsi que les configurations. La vraie solution était une mauvaise route par défaut du PC Proxmox, qui redirigeait les paquets vers Internet au lieu des PCs. (Voir figure 3)
+  </p><br></br>
+
+  <p>
+    Grâce à ce projet, j’ai pu développer et mettre en évidence mes compétences techniques liées à l’apprentissage : administrer les réseaux et l’internet, connecter les entreprises et les usagers.
+  </p><br></br>
+
+  <!-- Figures -->
+  <div class="project-figures">
+    <figure>
+      <img src="images/figure1.png" alt="Cartographie de l’infrastructure réseaux">
+      <figcaption>Figure 1 : Cartographie de l’infrastructure réseaux</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/figure2.png" alt="Ping montrant la non-communication des PCs">
+      <figcaption>Figure 2 : Ping montrant la non-communication des PCs</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/figure3.png" alt="Configuration du routeur">
+      <figcaption>Figure 3 : Une partie de la configuration du routeur</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/sae503_ac.png" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+  
+</div>
+
+
+        <div id="proj2" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 2 : Challenge securt CTF</h3>
+          
+          <p>J'ai réalisé ce projet qui consistait a créer des challenges CTF ( Capture The Flag) pour l'événnement SECURT organiser par l'université.
+          Chaque année les 3ème année de l'université organise cette évènnement dédié au première et deuxième où chaque étudiant en spécialité cyber sécurité 
+          créer des chaallenges où il faut trouver un mot de passe pour résoudre le challenge.</p>
+          
+          <p>Pour ma part j'ai créer deux challenges, qui se nomme Obfuscation JavaScript et XSS réfléchie.
+          Pour l'obfuscation JS, l'utilisateur devra lire le code JavaScript et savoir comprendre les étapes pour décoder le mot de passe pour ensuite
+          trouver le vrai mot de passe.
+          Puis pour le XXs réfléchie, l'utilisateur devra injecter un script en JavaScript pour pouvoir voler le cookie conetenant le mot de passe.</p>
+          
+          <figure>
+      <img src="images/saectf.png" alt="">
+      <figcaption></figcaption>
+    </figure>
+          <a href="https://github.com/RND252/Challenge-securt-CTF" target="_blank">Voir le projet</a>
+        </div>
+
+        <div id="proj3" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 3 : Réalisé un projet</h3>
+          
+          <p>J’ai réalisé un projet qui était d’assurer la sécurisation et la supervision avancées d’un système d’information c’est-à-dire de mettre en place un environnement complet de supervision et de sécurité réseau. 
+            C’était l’occasion de voir comment mes compétences en cybersécurité pouvaient répondre à des défis bien concrets. Pour cela j’ai travaillé en binôme avec Nabil pendant une dizaine de jours. 
+            Avant de commencer, nous avons pris le temps de réaliser un schéma de notre architecture réseau (voir figure 1). 
+            Cette simple étape m’a fait réaliser à quel point la planification est cruciale : visualiser l’ensemble nous a aidés à anticiper certains problèmes et à organiser notre travail de façon plus logique.</p><br></br>
+          
+          <p>Pendant le projet, j’ai principalement travaillé le PC SIEM (Security Information and Event Management) qui est une solution de sécurité qui collecte des données et analyse l’activité pour assurer la protection contre les menaces. 
+            J’ai installé et configurer Elasticsearch (un logiciel conçu pour la recherche et l’analyse de données) qui m’a permis de mieux comprendre comment collecter, analyser et exploiter les logs pour détecter des menaces. 
+            J’ai aussi configuré Filebeat sur les autres postes pour envoyer les logs vers Elasticsearch.</p><br></br>
+          
+          <p>L’un des aspects les plus intéressantes a été de gérer les faux positifs et les logs manquants. 
+            Ces difficultés m’ont poussé à réfléchir à l’importance de la qualité des données, et à la façon dont un mauvais réglage peut compromettre la fiabilité d’un système de surveillance. </p><br></br>
+          
+          <p>Pour régler ces problèmes, j’ai utilisé mes connaissances en gestion de données et j’ai ajusté les fichiers de configuration de Filebeat en ajoutant des filtres. 
+            Cette phase m’a appris à ne pas me contenter de suivre des instructions, mais à analyser, tester et adapter les paramètres en fonction des besoins réels du système.
+            Grâce à cela, j’ai pu créer des graphiques utiles, comme l’analyse des connexions SSH qui permet d’identifier des comportements suspects (voir figure 2). </p><br></br>
+          
+          <p>Enfin, ce projet m’a aussi permis de réfléchir à ma façon de collaborer et de travailler en autonomie. Travailler avec Nabil m’a montré l’importance d’une communication claire et d’une répartition efficace des tâches pour atteindre nos objectifs. 
+            J’ai compris que la réussite d’un projet repose autant sur l’organisation au sein du groupe que sur les solutions mises en œuvre.</p><br></br>
+          
+          <p>Pour résumer, ce projet a été l’occasion de mettre en pratique mes compétences techniques tout en développant mon esprit critique et mon sens de l’analyse. 
+            Il m’a permis de réfléchir non seulement à ce que j’ai fait, mais aussi au pourquoi, et à ce que cela m’apporte pour la suite dans le domaine de la cybersécurité.</p><br></br>
+          
+
+          <!-- Figures -->
+  <div class="project-figures">
+    <figure>
+      <img src="images/figure10.png" alt="Schéma de l'architecture réseau">
+      <figcaption>Figure 1 : Schéma de l'architecture réseau</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/figure20.png" alt="Graphique des connexions SSH">
+      <figcaption>Figure 2 : Graphique des connexions SSH</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/sae502_ac.png" alt="">
+      <figcaption></figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/sae502_r1.png" alt="">
+      <figcaption></figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/sae502_r2.png" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+        </div>
+
+        <div id="proj4" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 4</h3>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="proj5" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 5</h3>
+          <p></p>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <div class="container contact">
+      <h2>Contact</h2>
+
+      <p>Tu peux me contacter directement par mail :</p>
+      <a 
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=doganeren030@gmail.com"
+  target="_blank"
+  class="mail-btn"
+>
+  📧 Me contacter via Gmail
+</a>
+
+      <p>Si le lien ne fonctionne pas, tu as mon mail : doganeren030@gmail.com</p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Eren Dogan - Portfolio</p>
+  </footer>
+
+  <!-- SCRIPT JS -->
+  <script src="script.js"></script>
+  <script>
+    // Scroll reveal simple
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+        if(revealTop < windowHeight - revealPoint){
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
